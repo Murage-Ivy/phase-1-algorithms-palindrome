@@ -5,13 +5,20 @@ function isPalindrome(word) {
   // reverses the string
   let reversedWord = newWord.split('').reverse().join('');
 
-  if (newWord === reversedWord) {
-    return true
-  } else {
-    return false
-  }
+  return newWord === reversedWord
 
 }
+
+
+// function isPalindrome(word) {
+//   for (let i = 0; i < word.length / 2; i++) {
+//     if (word[i] !== word[word.length - 1 - i]) {
+//       return false
+//     }
+//     return true;
+//   }
+
+// }
 
 /* 
   Add your pseudocode here
@@ -19,9 +26,11 @@ function isPalindrome(word) {
    split the string using split('') method
   reverse of the string passed as an argument;
   Join the array of characters into one string
-  Compare the passed string with the reversed string
-  Return true if strings matches
-  Return false if string does not match
+ if reversed string matches string 
+ return true
+ else if reversed string does not match string
+ return false
+
 */
 
 /*
